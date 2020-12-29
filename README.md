@@ -20,14 +20,14 @@
 #### 커밋 메시지
 
 - 한글로 작성하기 (단, 제목의 Type은 영문으로 작성)
-- 제목작성 Type : 제목
-    - Feat : 코드, 새로운 기능 추가
-    - Fix : 버그 수정
-    - Docs : 문서 수정
-    - Style : 코드 스타일 변경 (기능, 로직 변경 x)
-    - Test : 테스트 관련
-    - Refactor : 코드 리팩토링
-    - Add : 단순히 파일 추가
+- 제목작성 Type: 제목
+    - Feat: 코드, 새로운 기능 추가
+    - Fix: 버그 수정
+    - Docs: 문서 수정
+    - Style: 코드 스타일 변경 (기능, 로직 변경 x)
+    - Test: 테스트 관련
+    - Refactor: 코드 리팩토링
+    - Add: 단순히 파일 추가
 - title은 간단하게 description은 자세히! 
     - 간단한 경우에는 description 없어도 됨
 
