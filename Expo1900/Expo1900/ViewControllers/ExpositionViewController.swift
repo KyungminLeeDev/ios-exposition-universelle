@@ -7,6 +7,10 @@
 import UIKit
 
 class ExpositionViewController: UIViewController {
+    // MARK: - IBOutlet
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
