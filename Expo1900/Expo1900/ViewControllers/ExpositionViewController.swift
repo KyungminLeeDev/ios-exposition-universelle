@@ -14,8 +14,10 @@ class ExpositionViewController: UIViewController {
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        if let exposition = decodeExpostionData() {
+            setupExpositionData(exposition)
+        }
     }
 
     // MARK: - Methods
@@ -33,6 +35,14 @@ class ExpositionViewController: UIViewController {
         }
         
         return nil
+    }
+    
+    private func setupExpositionData(_ exposition: Exposition) {
+        if let linebreakIndex = exposition.title.firstIndex(of: "(") {
+            let title = exposition.title
+            titleLabel.text = "\(title[title.startIndex..<linebreakIndex])"
+            subtitleLabel.text = "\(title[linebreakIndex..<title.endIndex])"
+        }
     }
     
 }
