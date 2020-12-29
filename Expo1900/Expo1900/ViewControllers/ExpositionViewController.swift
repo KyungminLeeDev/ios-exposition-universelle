@@ -7,12 +7,29 @@
 import UIKit
 
 class ExpositionViewController: UIViewController {
-
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
-
+    // MARK: - Methods
+    private func decodeExpostionData() -> Exposition? {
+        guard let dataAsset: NSDataAsset = NSDataAsset(name: "exposition_universelle_1900") else {
+            print("DataAsset가져오기 실패")
+            return nil
+        }
+        
+        do {
+            let exposition = try JSONDecoder().decode(Exposition.self, from: dataAsset.data)
+            return exposition
+        } catch {
+            print(error.localizedDescription)
+        }
+        
+        return nil
+    }
+    
 }
 
