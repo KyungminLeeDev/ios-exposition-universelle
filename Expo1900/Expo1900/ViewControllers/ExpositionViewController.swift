@@ -11,6 +11,7 @@ class ExpositionViewController: UIViewController {
     // MARK: - IBOutlet
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var visitorsLabel: UILabel!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -44,6 +45,13 @@ class ExpositionViewController: UIViewController {
             titleLabel.text = "\(title[title.startIndex..<linebreakIndex])"
             subtitleLabel.text = "\(title[linebreakIndex..<title.endIndex])"
         }
+        
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        if let str = numberFormatter.string(from: NSNumber(value: exposition.visitors)) {
+            visitorsLabel.text = "방문객 : \(str) 명"
+        }
+        
     }
     
 }

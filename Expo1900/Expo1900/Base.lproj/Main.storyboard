@@ -34,6 +34,13 @@
                                     <constraint firstAttribute="height" constant="220" id="YbS-Be-HPi"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="방문객 : 00,000,000 명" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsQ-mN-WYq">
+                                <rect key="frame" x="20" y="364" width="394" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -52,6 +59,7 @@
                     <connections>
                         <outlet property="subtitleLabel" destination="VDN-67-DaC" id="L38-A2-N57"/>
                         <outlet property="titleLabel" destination="fE4-2V-Nly" id="AaP-sM-tjR"/>
+                        <outlet property="visitorsLabel" destination="nsQ-mN-WYq" id="E0e-4e-vIr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
