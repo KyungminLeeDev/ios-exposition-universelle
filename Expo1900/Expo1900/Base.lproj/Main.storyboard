@@ -40,6 +40,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개최지 : 국가명 도시" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4f-ic-lfi">
+                                <rect key="frame" x="10" y="396" width="394" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -47,18 +53,22 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fE4-2V-Nly" secondAttribute="trailing" constant="10" id="58E-gQ-6al"/>
                             <constraint firstItem="fE4-2V-Nly" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5sM-ds-YSj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VDN-67-DaC" secondAttribute="trailing" constant="10" id="DAk-sg-IG1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4f-ic-lfi" secondAttribute="trailing" constant="10" id="HSz-bs-Plk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nsQ-mN-WYq" secondAttribute="trailing" constant="10" id="Hfs-4t-MDg"/>
+                            <constraint firstItem="c4f-ic-lfi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="JAU-HR-QAy"/>
                             <constraint firstItem="nsQ-mN-WYq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TZT-qB-AVN"/>
                             <constraint firstItem="Thj-HI-mlb" firstAttribute="top" secondItem="VDN-67-DaC" secondAttribute="bottom" constant="10" id="UPN-tA-ce5"/>
                             <constraint firstItem="Thj-HI-mlb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="Vtt-cQ-7vR"/>
                             <constraint firstItem="fE4-2V-Nly" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="a3N-0z-J2D"/>
                             <constraint firstItem="VDN-67-DaC" firstAttribute="top" secondItem="fE4-2V-Nly" secondAttribute="bottom" constant="8" symbolic="YES" id="b0l-Bd-8VR"/>
                             <constraint firstItem="nsQ-mN-WYq" firstAttribute="top" secondItem="Thj-HI-mlb" secondAttribute="bottom" constant="7.5" id="fFX-yE-M16"/>
+                            <constraint firstItem="c4f-ic-lfi" firstAttribute="top" secondItem="nsQ-mN-WYq" secondAttribute="bottom" constant="8" symbolic="YES" id="fiB-Gv-fpx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Thj-HI-mlb" secondAttribute="trailing" constant="10" id="nf7-bu-auT"/>
                             <constraint firstItem="VDN-67-DaC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="oRn-A3-Mz8"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="locationLabel" destination="c4f-ic-lfi" id="RgN-6p-kgW"/>
                         <outlet property="subtitleLabel" destination="VDN-67-DaC" id="L38-A2-N57"/>
                         <outlet property="titleLabel" destination="fE4-2V-Nly" id="AaP-sM-tjR"/>
                         <outlet property="visitorsLabel" destination="nsQ-mN-WYq" id="E0e-4e-vIr"/>

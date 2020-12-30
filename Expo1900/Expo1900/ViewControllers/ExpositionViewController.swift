@@ -12,6 +12,7 @@ class ExpositionViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var visitorsLabel: UILabel!
+    @IBOutlet weak var locationLabel: UILabel!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -51,6 +52,8 @@ class ExpositionViewController: UIViewController {
         if let str = numberFormatter.string(from: NSNumber(value: exposition.visitors)) {
             visitorsLabel.text = "방문객 : \(str) 명"
         }
+        
+        locationLabel.text = "개최지 : \(exposition.location)"
         
     }
     
