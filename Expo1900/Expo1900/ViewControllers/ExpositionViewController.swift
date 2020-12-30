@@ -1,7 +1,8 @@
 //
-//  Expo1900 - ViewController.swift
-//  Created by yagom. 
-//  Copyright © yagom academy. All rights reserved.
+//  ExpositionViewController.swift
+//  Expo1900
+//
+//  Created by Kyungmin Lee on 2020/12/24.
 // 
 
 import UIKit
